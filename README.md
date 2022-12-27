@@ -1,2 +1,3 @@
-# leetcode-notes
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)
+|  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note| 
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|-----|
+55 | [Jump Game](https://leetcode.com/problems/jump-game/) | [C++](./C++/jump-game.cpp)  | _O(n)_ | _O(1)_ | Medium ||
