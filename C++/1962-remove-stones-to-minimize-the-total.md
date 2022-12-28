@@ -26,6 +26,8 @@ O(n) for turning the vector into a heap, O(logn) for each heap insertion and rem
 #### Space Complexity: O(1)
 
 ```cpp
+#include <algorithm>
+
 class Solution {
 public:
     int minStoneSum(vector<int>& piles, int k) {
