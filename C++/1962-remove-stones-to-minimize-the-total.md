@@ -21,10 +21,9 @@ Supose, for the sake of contradiction, B<sub>G</sub>, the collection of bags fou
 Let _b_ be the  -->
 
 ### Analysis
-#### Time Complexity: O(nlogn)
-O(n) for calculating the remaining capacity, O(nlogn) to sort the array, and O(n) to fill the bags to capacity. 
+#### Time Complexity: O(n + klogn)
+O(n) for turning the vector into a heap, O(logn) for each heap insertion and removal, and O(n) to compute the remaining sum of stones.
 #### Space Complexity: O(1)
-We can optimize the space complexity from linear to constant by storing the remaining capacity directly in the capacity array, since the original capacity is not relavant once we know the remaining capacity.
 
 ```cpp
 class Solution {
@@ -38,12 +37,13 @@ public:
             // every pile has exactly 1 stone, we have reached the minimum
             if (piles.front() == 1) break;
 
-            // remove the max pile from heap
+            // take the max pile off heap
             std::pop_heap(piles.begin(), piles.end());
 
-            // remove half of the stones from pile
+            // remove half of the stones from the max pile
             piles.back() -= piles.back() / 2;
 
+            // insert the modified pile back into heap
             std::push_heap(piles.begin(), piles.end());
         }
 
