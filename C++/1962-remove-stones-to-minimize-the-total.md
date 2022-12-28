@@ -1,4 +1,4 @@
-## 1962. Remove Stones to Minimize the Total [#]([https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/](https://leetcode.com/problems/remove-stones-to-minimize-the-total/)
+## 1962. Remove Stones to Minimize the Total [#](https://leetcode.com/problems/remove-stones-to-minimize-the-total/)
 
 ### Additional Cases
 <pre>
@@ -10,11 +10,12 @@
 <b>Input:</b> piles = [2,4,4], k = 10
 <b>Output:</b> 3
 </pre>
+
 ### Intuition
-One _greedy_ approach is to can calculate the remaining capacity of each bag, order them in ascending order, and then fill the bags with the given additional rocks until we run out of it. 
+From the cases above and given the constraint that every pile has a positive number of stones, we can observe that the minimum possible sum of stones is the number of piles for an imaginary k of "infinity". Thus, the minimum possible sum of stones is either the number of piles or the remaining number of stones after _greedily_ removing the maximum possible of stones each time for all _k_ operations.
 
 ### Proof of Correctness
-<!-- (Exchange argument) </br>
+<!-- (Greedy stays ahead) </br>
 Supose, for the sake of contradiction, B<sub>G</sub>, the collection of bags found by our algorithm isn't the maximum number of bags that be filled. Let B' be the true maximum collection of bags.
 </br></br>
 Let _b_ be the  -->
