@@ -8,7 +8,7 @@
 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [C++](./C++/205-isomorphic-strings.md)  | _O(n)_ | _O(1)_ | Easy ||
 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [C++](./C++/392-is-subsequence.md)  | _O(n)_ | _O(1)_ | Easy ||
 136 | [Single Number](https://leetcode.com/problems/single-number/) | [C++](./C++/136-single-number.md)  | _O(n)_ | _O(1)_ | Easy ||
-290 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | [C++](./C++/290-word-pattern.md)  | _O(n)_ | _O(1)_ | |  | Similar to #205 | Easy ||
+290 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | [C++](./C++/290-word-pattern.md)  | _O(n)_ | _O(1)_ | Easy |  | Similar to #205 ||
 
 <!-- template
  | []() | [C++](./C++/)  | _O()_ | _O()_ | Medium ||
